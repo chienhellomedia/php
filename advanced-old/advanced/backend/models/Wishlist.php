@@ -1,0 +1,55 @@
+<?php
+
+namespace backend\models;
+
+use Yii;
+
+/**
+ * This is the model class for table "wishlist".
+ *
+ * @property integer $id
+ * @property integer $cus_id
+ * @property integer $product_id
+ * @property integer $status
+ * @property integer $created_at
+ */
+class Wishlist extends \yii\db\ActiveRecord
+{
+    /**
+     * @inheritdoc
+     */
+    public static function tableName()
+    {
+        return 'wishlist';
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function rules()
+    {
+        return [
+            [['cus_id', 'product_id', 'created_at'], 'required'],
+            [['cus_id', 'product_id', 'status', 'created_at'], 'integer'],
+            ['product_id', 'unique'],
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'cus_id' =>'Mã khách hàng',
+            'product_id' => 'Mã sản phẩm',
+            'status' => 'Trạng thái',
+            'created_at' => 'Ngày tạo',
+        ];
+    }
+    public function getWishListByUser($id)
+    {
+        return $data = Wishlist::find()->where(['status' => 10, 'cus_id' => $id])->all();
+    }
+}
