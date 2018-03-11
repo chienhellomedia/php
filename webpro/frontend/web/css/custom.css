@@ -1,0 +1,120 @@
+#login-form {
+	padding-top: 25px;
+}
+#modal-login .nav-tabs > li.active > a, #modal-login .nav-tabs > li.active > a:hover, #modal-login .nav-tabs > li.active > a:focus {
+	border-bottom: 1px solid;
+}
+.yamm .dropdown-menu .yamm-content .links li a {
+	padding: 5px 10px;
+	font-size: 15px;
+}
+.yamm .dropdown-menu .yamm-content .links li a:hover {
+	background-color: #59b210 !important;
+	color: #ffffff !important;
+}
+.sidebar .side-menu nav .nav > li > .mega-menu {
+	min-width: 100%;
+}
+ul li {
+	cursor: pointer;
+}
+.logo a img {
+	width: 125px;
+	height: auto;
+	background: #ffffff;
+}
+
+.product .product-info .product-price .price {
+	margin-right: 0;
+}
+.shopping-cart .cart-image img {
+	width: 50px;
+}
+.notice-check-off {
+	background: #59b21094;
+	color: #ffffff;
+	padding: 10px;
+	font-size: 16px;
+}
+.notice-check-off-1 {
+	background: #d9534f;
+	color: #ffffff;
+	padding: 10px;
+	font-size: 16px;
+}
+.notice-check {
+	width: auto; position: fixed; top:180px; right:0; z-index: 9999;
+}
+.notice-add {
+	background: #59b21094;
+	color: #ffffff;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.spin-load {
+	display: none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('../assets/images/ajax.gif') center no-repeat transparent;
+}
+.br0 {
+	border-radius: 0 !important;
+}
+.outer-bottom-xs {
+	margin-bottom: 20px;
+}
+.video-main {
+
+	padding-left: 20px;
+	border-bottom: 1px solid #f1f1f1;
+	padding-bottom: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.img-blog {
+	width: 80% !important;
+	height: auto !important;
+	display: block;
+	margin:  0 auto;
+}
+.featured-product{
+	margin-bottom: 0 !important;
+}
+.scroll-tabs {
+	margin-bottom: 10px !important;
+}
+.latest-blog .blog-slider {
+	padding-bottom: 0 !important;
+}
+.wide-banner.cnt-strip {
+	height: 150px;
+}
+
+.facebook-chat {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	width: 300px;
+}
+.facebook-chat .show-chat {
+	padding: 6px 10px;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin: 0px 0;
+	background: #4080ff;
+	color: #ffffff;
+	font-weight: 600;
+	cursor: pointer;
+}
+.facebook-chat .fb-page {
+	display: none;
+}
+.bluezed-scroll-top {
+	bottom: 42px !important;
+}
