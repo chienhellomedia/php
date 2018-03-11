@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Dynamic Drive DHTML Scripts- Smooth Navigational Menu</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A folding DHTML menu tree with persistance feature, created via cookies.">
+<meta name="keywords" content="DHTML, folding menu tree script, DHTML tutorial, free, JavaScript,persistance">
+<link rel="stylesheet" type="text/css" href="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/mainstylev2.css">
+
+<link rel="stylesheet" type="text/css" href="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ddsmoothmenu.css">
+<link rel="stylesheet" type="text/css" href="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ddsmoothmenu-v.css">
+
+<style>
+
+#screenshot1{
+max-width: 100% !important;
+height: auto !important;
+}
+
+</style>
+
+<script async="" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/analytics.js.download"></script><script src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ca-pub-7051847089736268.js.download"></script><script type="text/javascript" id="async-buttons" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/async-buttons.js.download"></script><script type="text/javascript" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/jquery.min.js.download"></script>
+<script type="text/javascript" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ddsmoothmenu.js.download">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu1", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu2", //Menu DIV id
+	orientation: 'v', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu-v', //class added to menu's outer DIV
+	arrowswap: true,
+	method: 'toggle',
+	//customtheme: ["#804000", "#482400"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu-ajax",
+	orientation: 'h',
+	classname: 'ddsmoothmenu',
+	customtheme: ["#1c5a80", "#18374a"], //override default menu CSS background values? Uncomment: ["normal_background", "hover_background"]
+	contentsource: ["smoothcontainer", "smoothmenu.htm"] //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+
+<style type="text/css">
+#smoothmenu1 ul li a .downarrowclass { background: url(http://www.dynamicdrive.com/dynamicindex1/down.gif) no-repeat;width:11px;height:8px;}
+#smoothmenu1 ul li a .rightarrowclass { background: url(http://www.dynamicdrive.com/dynamicindex1/right.gif) no-repeat;width:8px;height:11px;}
+</style>
+
+<style type="text/css">
+#smoothmenu2 ul li a .downarrowclass { background: url(http://www.dynamicdrive.com/dynamicindex1/down.gif) no-repeat;width:11px;height:8px;}
+#smoothmenu2 ul li a .rightarrowclass { background: url(http://www.dynamicdrive.com/dynamicindex1/right.gif) no-repeat;width:8px;height:11px;}
+#smoothmenu2 ul li a:hover .downarrowclass, #smoothmenu2 ul li a.selected .downarrowclass { background-image: url(http://www.dynamicdrive.com/dynamicindex1/down_over.gif);}
+#smoothmenu2 ul li a:hover .rightarrowclass, #smoothmenu2 ul li a.selected .rightarrowclass { background-image: url(http://www.dynamicdrive.com/dynamicindex1/right_over.gif);}
+</style>
+
+<style type="text/css">
+#smoothmenu-ajax, #smoothmenu-ajax ul li a {background:#1c5a80;}
+#smoothmenu-ajax ul li a:hover {background:#18374a;}
+#smoothmenu-ajax ul li a .downarrowclass { background: url(http://www.dynamicdrive.com/dynamicindex1/down.gif) no-repeat;width:11px;height:8px;}
+#smoothmenu-ajax ul li a .rightarrowclass { background: url(http://www.dynamicdrive.com/dynamicindex1/right.gif) no-repeat;width:8px;height:11px;}
+</style>
+<script type="text/javascript" async="" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/bsa.js.download"></script><script type="text/javascript" id="_bsap_js_f1d07212cbe850be7e3db47ab3e68732" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/s_f1d07212cbe850be7e3db47ab3e68732.js.download" async="async"></script><style title="ddsmoothmenushadowsnone" type="text/css">.ddsmoothmenushadowsnone{display:none!important;}</style><link rel="stylesheet" type="text/css" href="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/buttons.e80452d5e7cc382dad89d10f50bde247.css"><script type="text/javascript" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/pro.js.download" id="_bsap_premium_pro"></script><script type="text/javascript" id="_bsaPRO_js" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/saved_resource" async="async"></script><iframe id="stSegmentFrame" name="stSegmentFrame" frameborder="0" scrolling="no" width="0px" height="0px" sandbox="allow-scripts allow-same-origin" style="display:none;" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/saved_resource.html"></iframe></head>
+
+<body>
+
+<script src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/scriptsv21.js.download"></script>
+
+<div id="topsection">
+
+<div id="topmenu">
+<div id="sitelogo">
+<a href="http://www.dynamicdrive.com/"><img border="0" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ddlogov2.png"></a>
+</div>
+
+<a class="dd-animateddrawer" id="ddsite-mobiletoggle" href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">
+<span></span>
+</a>
+
+<ul id="ddsite-topmenuul">
+<li><a href="http://www.dynamicdrive.com/new.htm" id="firstmenuitem">New</a></li>
+<li><a href="http://www.dynamicdrive.com/revised.htm">Revised</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://www.dynamicdrive.com/style/" class="dd-anchorclass" rel="dd-submenu">CSS Codes</a></li>
+<li><a href="http://tools.dynamicdrive.com/" class="dd-anchorclass" rel="dd-submenu2">Tools</a></li>
+<li><a href="http://blog.dynamicdrive.com/">Blog</a></li>
+
+<li id="search">
+<form id="topform" method="get" action="http://www.dynamicdrive.com/search/search.php">
+<input type="text" name="zoom_query" id="zoom_query" size="20" class="zoom_searchbox topsearchbox" placeholder="search">
+<input id="query_submit" type="image" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/magnify.gif">
+<input name="zoom_per_page" id="zoom_per_page" type="hidden" value="10">
+<input name="zoom_and" id="zoom_and" type="hidden" value="1">
+<input type="hidden" name="zoom_sort" value="0">
+</form>
+</li>
+</ul>
+</div>
+
+
+
+
+
+<div id="topbanner">
+<script async="" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/adsbygoogle.js.download"></script>
+<script type="text/javascript" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/adbannerv2.js.download"></script><div id="bsap_1305062" class="bsap bsap_1305062" data-serve="CVADT5QE">
+<style type="text/css">
+div.bsap_1305062{width:100%;display:block;}div.bsap_1305062 a{width:728px;}div.bsap_1305062 a img{padding:0;}div.bsap_1305062 a em{font-style:normal;}div.bsap_1305062 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden;}
+div.bsap_1305062 img{border:0;clear:right;}
+div.bsap_1305062 a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}
+div.bsap_1305062 a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}div.bsap_1305062 a{line-height:100%;}div.bsap_1305062 a.adhere{width:728px;height:90px;line-height:720%;}html>body div.bsap_1305062 a.adhere{width:726px;height:88px;}div.bsap_1305062 img.s{height:0;width:0;}div.bsap_1305062{line-height:9px;}div.bsap_1305062 .bsap_adhere2,div.bsap_1305062 iframe{float:left;}div.bsap_1305062 .bsap_adhere2 a{height:90px;width:20px;background:url(http:\/\/s3.buysellads.com\/ac\/ah20x90_1.gif) no-repeat 0 0;text-indent:-9999px;}
+</style>
+<iframe width="728" height="90" id="ad_1305062_backfill1_frame" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/raw_c709d64b30a8d82a5d5f9a684aaba204.html" frameborder="0" class="bsap_adframe" scrolling="no"></iframe>
+
+<script type="text/javascript" id="auto_1" class="ignoreme"> if (typeof(_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(51962, 'CVADT5QE', ''); </script>
+
+<div class="bsap_adhere">
+
+<a href="http://www.buysellads.com/buy/detail/54/zone/1305062?utm_source=site_54&amp;utm_medium=website&amp;utm_campaign=imagetext&amp;utm_content=zone_1305062" class="">Advertise Here</a>
+
+</div>
+
+
+<script type="text/javascript" id="auto_2" class="ignoreme"> if (typeof(BSACallback) !== 'undefined') BSACallback(); </script></div><style type="text/css">#c1 a{ color: black; background: #F0F0F0}</style>
+</div>
+
+</div><p id="pathlinks"><a href="http://www.dynamicdrive.com/">Home</a> <img border="0" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/arrow2.gif" width="8" height="10">                                                        
+<a href="http://www.dynamicdrive.com/dynamicindex1/">Menu and Navigation</a> <img border="0" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/arrow2.gif" width="8" height="10">                                                        
+<a href="http://www.dynamicdrive.com/dynamicindex1/indexc.html">Multiple Level 
+Menus</a> 
+<img border="0" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/arrow2.gif" width="8" height="10">                                                        Here</p>
+
+<div id="maincontainer">
+
+<div id="contentwrapper">
+<div id="contentcolumn">
+    
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/buttons.js.download"></script>
+<script type="text/javascript">stLight.options({publisher: "40b54cb4-9462-4498-90ff-0b73ceacc87b", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
+
+<div id="dd-socialshare">
+
+<span class="st_facebook_large" displaytext="Facebook" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(&quot;http://w.sharethis.com/images/2017/facebook_32.png&quot;);"></span></span></span>
+<span class="st_twitter_large" displaytext="Tweet" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(&quot;http://w.sharethis.com/images/2017/twitter_32.png&quot;);"></span></span></span>
+<span class="st_delicious_large" displaytext="Delicious" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(&quot;http://w.sharethis.com/images/2017/delicious_32.png&quot;);"></span></span></span>
+<span class="st_googleplus_large" displaytext="Google +" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(&quot;http://w.sharethis.com/images/2017/googleplus_32.png&quot;);"></span></span></span>
+<span class="st_email_large" displaytext="Email" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(&quot;http://w.sharethis.com/images/2017/email_32.png&quot;);"></span></span></span>
+
+</div>
+
+
+
+<div id="scriptheader"><span class="compatlist">FF1+ IE7+ Opera8+</span> 
+  <h3>Smooth Navigational Menu (v3.02)</h3></div> 
+<div id="scriptheaderFoot"><b>Author:</b>  
+  <span id="ddauthor">Dynamic Drive</span></div>
+
+<p align="left"><!--webbot bot="HTMLMarkup" startspan --></p><div id="smoothmenu1" class="ddsmoothmenu" style="display: block;">
+<ul>
+<li><a href="http://www.dynamicdrive.com/">Item 1</a></li>
+<li style="z-index: 1000;"><a href="http://www.dynamicdrive.com/" style="padding-right: 23px;">Folder 0<span style="display: block;" class="downarrowclass"></span></a>
+  <ul style="display: none; top: 30px;">
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.1</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.2</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.3</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.4</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.2</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.3</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.4</a></li>
+  </ul>
+</li>
+<li style="z-index: 999;"><a href="http://www.dynamicdrive.com/" style="padding-right: 23px;">Folder 1<span style="display: block;" class="downarrowclass"></span></a>
+  <ul style="display: none; top: 30px;">
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.1</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.2</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.3</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.4</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.2</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.3</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.4</a></li>
+  </ul>
+</li>
+<li><a href="http://www.dynamicdrive.com/">Item 3</a></li>
+<li style="z-index: 998;"><a href="http://www.dynamicdrive.com/" style="padding-right: 23px;">Folder 2<span style="display: block;" class="downarrowclass"></span></a>
+  <ul style="display: none; top: 30px;">
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 2.1</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Folder 2.1</a>
+    <ul>
+    <li><a href="http://www.dynamicdrive.com/">Sub Item 2.1.1</a></li>
+    <li><a href="http://www.dynamicdrive.com/">Sub Item 2.1.2</a></li>
+    <li><a href="http://www.dynamicdrive.com/">Folder 3.1.1</a>
+		<ul>
+    		<li><a href="http://www.dynamicdrive.com/">Sub Item 3.1.1.1</a></li>
+    		<li><a href="http://www.dynamicdrive.com/">Sub Item 3.1.1.2</a></li>
+    		<li><a href="http://www.dynamicdrive.com/">Sub Item 3.1.1.3</a></li>
+    		<li><a href="http://www.dynamicdrive.com/">Sub Item 3.1.1.4</a></li>
+    		<li><a href="http://www.dynamicdrive.com/">Sub Item 3.1.1.5</a></li>
+		</ul>
+    </li>
+    <li><a href="http://www.dynamicdrive.com/">Sub Item 2.1.4</a></li>
+    </ul>
+  </li>
+  </ul>
+</li>
+<li><a href="http://www.dynamicdrive.com/style/">Item 4</a></li>
+</ul>
+<br style="clear: left">
+</div><!--webbot bot="HTMLMarkup" endspan i-checksum="12489" --><p></p>
+<p align="left"><b>Updated:</b> April 1st, 16' (v3.02): Fixed Chrome desktop 
+falsely reporting as touch enabled, requiring clicking on menu items to drop 
+down.</p>
+    <p align="left"><strong>Description: </strong>Smooth Navigation Menu is a 
+	multi level, CSS list based menu powered using 
+	<a target="_blank" href="http://www.jquery.com/">jQuery</a> that makes website navigation a smooth 
+	affair. And that's a good thing given the important role of this element in 
+	any site. The menu's contents can either be 
+	from direct markup on the page, or <a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#ajax">an external file and fetched via Ajax 
+	instead</a>. And thanks to jQuery, a configurable, sleek "slide plus fade 
+	in" transition is applied during the unveiling of the sub menus. The 
+	menu supports both the <b>horizontal</b> and <b>vertical</b> (sidebar) 
+	orientation. On the mobile front (<font color="#FF0000">v3.0+</font>), the 
+	menu <a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#mobile">transforms into a fixed, vertical menu</a> when the 
+	user's device or browser screen is below a certain width, ensuring a smooth 
+	experience regardless of screen size.</p>
+<p align="left">Some noteworthy features- You can specify a delay before the sub 
+menus appear and disappear when the mouse rolls over and out of them, 
+respectively. The sub menus reposition themselves if too close to the 
+window's right edges. And last but not least, the depth of the accompanying shadow can be customized, or 
+removed altogether. Smooth we say!</p>
+<p align="left"><!--webbot bot="HTMLMarkup" startspan --><a class="animateddrawer" id="ddsmoothmenu-mobiletoggle" href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#" style="display: none;">
+<span></span>
+</a>
+
+</p><div id="smoothmenu2" class="ddsmoothmenu-v" style="display: block;">
+<ul>
+<li><a href="http://www.dynamicdrive.com/">Item 1</a></li>
+<li style="z-index: 1000;"><a href="http://www.dynamicdrive.com/" style="padding-right: 6px;">Folder 0<span style="display: block;" class="rightarrowclass"></span></a>
+  <ul style="display: none; top: 0px;">
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.1</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.2</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.3</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.4</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.2</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.3</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.4</a></li>
+  </ul>
+</li>
+<li style="z-index: 999;"><a href="http://www.dynamicdrive.com/" style="padding-right: 6px;">Folder 1<span style="display: block;" class="rightarrowclass"></span></a>
+  <ul style="display: none; top: 0px;">
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.1</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.2</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.3</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.4</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.2</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.3</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 1.4</a></li>
+  </ul>
+</li>
+<li><a href="http://www.dynamicdrive.com/">Item 3</a></li>
+<li style="z-index: 998;"><a href="http://www.dynamicdrive.com/" style="padding-right: 6px;">Folder 2<span style="display: block;" class="rightarrowclass"></span></a>
+  <ul style="display: none; top: 0px;">
+  <li><a href="http://www.dynamicdrive.com/">Sub Item 2.1</a></li>
+  <li><a href="http://www.dynamicdrive.com/">Folder 2.1</a>
+    <ul>
+    <li><a href="http://www.dynamicdrive.com/">Sub Item 2.1.1</a></li>
+    <li><a href="http://www.dynamicdrive.com/">Sub Item 2.1.2</a></li>
+    <li><a href="http://www.dynamicdrive.com/">Folder 3.1.1</a>
+		<ul>
+    		<li><a href="http://www.dynamicdrive.com/">Sub Item 3.1.1.1</a></li>
+    		<li><a href="http://www.dynamicdrive.com/">Sub Item 3.1.1.2</a></li>
+    		<li><a href="http://www.dynamicdrive.com/">Sub Item 3.1.1.3</a></li>
+    		<li><a href="http://www.dynamicdrive.com/">Sub Item 3.1.1.4</a></li>
+    		<li><a href="http://www.dynamicdrive.com/">Sub Item 3.1.1.5</a></li>
+		</ul>
+    </li>
+    <li><a href="http://www.dynamicdrive.com/">Sub Item 2.1.4</a></li>
+    </ul>
+  </li>
+  </ul>
+</li>
+<li><a href="http://www.dynamicdrive.com/style/">Item 4</a></li>
+</ul>
+<br style="clear: left">
+</div><!--webbot bot="HTMLMarkup" endspan i-checksum="338" --><p></p>
+    <hr size="1">
+    <p align="left"><strong>Directions </strong>
+	<a target="win2" href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu_dev.htm"><img src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/dview.gif" width="115" height="19" alt="Developer&#39;s View" border="0"></a></p>
+    <p align="left"><strong>Step 1: </strong>Insert the following
+    code into the &lt;head&gt; section of your page:</p>
+    <form><div align="left">
+<a class="selectall" href="javascript:highlight(0)">Select All</a><br>
+      <textarea class="codecontainer" rows="8" name="S2" cols="45" wrap="virtual">&lt;!DOCTYPE html&gt;
+
+&lt;link rel="stylesheet" type="text/css" href="ddsmoothmenu.css" /&gt;
+&lt;link rel="stylesheet" type="text/css" href="ddsmoothmenu-v.css" /&gt;
+
+&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="ddsmoothmenu.js"&gt;
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu1", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu2", //Menu DIV id
+	orientation: 'v', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu-v', //class added to menu's outer DIV
+	method: 'toggle', // set to 'hover' (default) or 'toggle'
+	arrowswap: true, // enable rollover effect on menu arrow images?
+	//customtheme: ["#804000", "#482400"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+&lt;/script&gt;</textarea></div>
+    </form>
+    <p align="left">The above code references a few 
+    external files, which by default you should upload to the same directory as 
+	the page itself 
+    (right click each file and select "Save As"):</p>
+<ul>
+  <li>
+  <a href="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ddsmoothmenu.js.download">ddsmoothmenu.js</a></li>
+  <li>
+  <a href="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ddsmoothmenu.css">ddsmoothmenu.css</a></li>
+	<li>
+  <a href="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ddsmoothmenu-v.css">ddsmoothmenu-v.css</a></li>
+  <li>
+  5 images: <img border="0" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/right.gif" width="8" height="11">
+	<img border="0" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/down.gif" width="11" height="8">
+	<img border="0" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/left.gif" width="12" height="12">
+	<img border="0" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/right_over.gif" width="8" height="11">
+	<img border="0" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/down_over.gif" width="11" height="8"></li>
+</ul>
+    <p align="left"><strong>Step 2: </strong>&nbsp;Add the below menu code to 
+	the BODY section of your page. It contains the markup for 1 horizontal menu 
+	and 1 vertical menu:</p>
+    <form><p>
+<a class="selectall" href="javascript:highlight(1)">Select All</a><br>
+      <textarea class="codecontainer" rows="8" name="S3" cols="45" wrap="virtual">&lt;!-- Markup for mobile menu toggler. Hidden by default, only shown when in mobile menu mode --&gt;
+&lt;a class="animateddrawer" id="ddsmoothmenu-mobiletoggle" href="#"&gt;
+&lt;span&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;h2&gt;Example 1&lt;/h2&gt;
+
+&lt;div id="smoothmenu1" class="ddsmoothmenu"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Folder 0&lt;/a&gt;
+  &lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Folder 1&lt;/a&gt;
+  &lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Folder 2&lt;/a&gt;
+  &lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 2.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Folder 2.1&lt;/a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 2.1.1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 2.1.2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Folder 3.1.1&lt;/a&gt;
+		&lt;ul&gt;
+    		&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 3.1.1.1&lt;/a&gt;&lt;/li&gt;
+    		&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 3.1.1.2&lt;/a&gt;&lt;/li&gt;
+    		&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 3.1.1.3&lt;/a&gt;&lt;/li&gt;
+    		&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 3.1.1.4&lt;/a&gt;&lt;/li&gt;
+    		&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 3.1.1.5&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 2.1.4&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.dynamicdrive.com/style/"&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br style="clear: left" /&gt;
+&lt;/div&gt;
+
+
+&lt;h2 style="margin-top:200px"&gt;Example 2&lt;/h2&gt;
+
+&lt;div id="smoothmenu2" class="ddsmoothmenu-v"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Folder 0&lt;/a&gt;
+  &lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Folder 1&lt;/a&gt;
+  &lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 1.4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Folder 2&lt;/a&gt;
+  &lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 2.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Folder 2.1&lt;/a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 2.1.1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 2.1.2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Folder 3.1.1&lt;/a&gt;
+		&lt;ul&gt;
+    		&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 3.1.1.1&lt;/a&gt;&lt;/li&gt;
+    		&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 3.1.1.2&lt;/a&gt;&lt;/li&gt;
+    		&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 3.1.1.3&lt;/a&gt;&lt;/li&gt;
+    		&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 3.1.1.4&lt;/a&gt;&lt;/li&gt;
+    		&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 3.1.1.5&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Sub Item 2.1.4&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.dynamicdrive.com/style/"&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br style="clear: left" /&gt;
+&lt;/div&gt;</textarea></p>
+    </form>
+    <p>
+    Each menu should consist of an outer DIV and a valid UL list contained 
+	inside it.</p><p>
+    If you wish the menu content to reside in an external file on your server 
+	and dynamically added to your page(s), read the section "<a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#ajax">Putting 
+	the Menu contents in an external file</a>" below.</p><p>
+    Well, that's it for installation.</p><h4>
+    <img border="0" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/orangecircle.gif" width="20" height="19">
+	<code>ddsmoothmenu.init()</code> and Menu content structure</h4>
+<p>
+    Setting up a Smooth Navigational Menu on your page involves calling <code>
+	ddsmoothmenu.init()</code> inside the HEAD section of your page:</p><p class="codehighlight">
+ddsmoothmenu.init({<br>
+&nbsp;mainmenuid: "<font color="#FF0000">smoothmenu1</font>", //menu DIV id<br>
+&nbsp;orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"<br>
+&nbsp;classname: 'ddsmoothmenu', //class added to menu's outer DIV<br>
+&nbsp;//customtheme: ["#1c5a80", "#18374a"],<br>
+&nbsp;contentsource: "markup" //"markup" or ["container_id", 
+"path_to_menu_file"]<br>
+})</p>
+<p>where "<code>smoothmenu1</code>" corresponds to the menu content's outermost DIV 
+on the page. Here's a description of each option:</p>
+  <table border="1" cellspacing="0" cellpadding="2">
+    <tbody><tr>
+      <td width="25%" bgcolor="#D8EA99" valign="top"><b>Option</b></td>
+      <td width="75%" bgcolor="#D8EA99" valign="top"><b>Description</b></td>
+    </tr>
+    <tr>
+      <td width="25%" valign="top"><code>mainmenuid</code></td>
+      <td width="75%" valign="top">The ID of the menu's outermost DIV. If the 
+		menu contents are <a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#ajax">fetched via Ajax</a>, then this ID 
+		should correspond to the outermost DIV that's <b>within</b> the external 
+		file.</td>
+    </tr>
+    <tr>
+      <td width="25%" valign="top"><code>orientation</code></td>
+      <td width="75%" valign="top">Sets the orientation of the menu. Enter the 
+		value "h" or "v" for a horizontal or vertical menu, respectively. Note 
+		that the "<code>classname</code>" setting below must also be set 
+		according to the "<code>orientation</code>" setting.</td>
+    </tr>
+    <tr>
+      <td width="25%" valign="top"><code>classname</code></td>
+      <td width="75%" valign="top">Sets the CSS class name that gets applied to 
+		the outermost DIV of the menu, effectively styling it. Based on the "<code>orientation</code>" 
+		setting above, you want to enter the CSS class that correctly styles the 
+		menu By default, "<code>ddsmoothmenu</code>" creates a horizontal menu 
+		bar, while "<code>ddsmoothmenu-v</code>" creates a vertical one. Take a 
+		look inside
+  <a href="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ddsmoothmenu.css">ddsmoothmenu.css</a> and
+  <a href="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ddsmoothmenu-v.css">ddsmoothmenu-v.css</a>.</td>
+    </tr>
+    <tr>
+      <td width="25%" valign="top"><code>method</code><p><font color="#FF0000">
+		v2.0 option</font></p></td>
+      <td width="75%" valign="top">Sets the method for which the sub menus 
+		should open and close, either "<code>hover</code>" or "<code>toggle</code>". 
+		Defaults to "<code>hover</code>", which opens each sub menu 
+		when the user rolls the mouse over it. With "<code>toggle</code>", the menus 
+		are opened when the user clicks on them instead.</td>
+    </tr>
+    <tr>
+      <td width="25%" valign="top"><code>arrowswap</code><p>
+		<font color="#FF0000">v2.0 option</font></p></td>
+      <td width="75%" valign="top">Boolean that if set to <code>true</code> 
+		(defaults to <code>false</code>) will cause the script to show alternate 
+		versions of the arrow images (down and right) of the menu when the mouse 
+		rolls over a menu header. In other words, it enables rollover effect on 
+		the arrow images.<p>You do NOT specify the paths to the rollover images 
+		when this option is enabled. Instead, the script simply looks at the 
+		path and file names of the default arrow images inside ddsmoothmenu.js 
+		and appends a "<b>_over</b>" suffix to the default images' file names to 
+		form the full path and file names to the rollover images. So if the 
+		paths to the default arrow images as specified inside ddsmoothmenu.js 
+		are as follows:</p>
+		<p class="codehighlight">arrowimages: {down:['downarrowclass', 'images/down.gif', 
+		23], right:['rightarrowclass', 'images/right.gif', 6]},</p>
+		<p>In this case you should name your rollover images <font color="#FF0000">
+		down_over.gif</font> and <font color="#FF0000">right_over.gif</font> 
+		respectively, and place them inside the <font color="#FF0000">images/</font> 
+		directory.</p></td>
+    </tr>
+    <tr>
+      <td width="25%" valign="top"><code>customtheme</code></td>
+      <td width="75%" valign="top">In general, customizing the menu's style and background colors 
+		is done by editing the two CSS files of the script. 
+		However, you can also modify the menu's background and hover background 
+		color- on 
+a per page or per menu basis easily, by taking advantage of the "<code>customtheme</code>" 
+		setting. To do so, uncomment (remove the <code>//</code> prefix) from 
+		this setting and declare two CSS background values, one for the default state, the 
+other, when the mouse rolls over the menu items:<p class="codehighlight">customtheme: ["#1c5a80", "#18374a"], //override default menu CSS 
+		background values?</p>
+<p>This property is useful for quickly testing out color combinations without 
+having to edit "<a href="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ddsmoothmenu.css">ddsmoothmenu.css</a>" each time.</p>
+		</td>
+    </tr>
+    <tr>
+      <td width="25%" valign="top"><code>contentsource</code></td>
+      <td width="75%" valign="top">Enter "<code>markup</code>" if your&nbsp; 
+		menu contents are directly inline on the page, or <code>["container_id", 
+		"path_to_menu_file"]</code> For more info on the later option, see "<a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#ajax">Putting the Menu contents in an external file and fetched using Ajax</a>" 
+		below.</td>
+    </tr>
+    </tbody></table>
+<h3>Menu content structure</h3>
+<p>As far as the HTML markup of each menu, it should consist of an outer DIV 
+plus a valid UL list inside it, such as:</p>
+<p class="codehighlight">&lt;div id="<font color="#FF0000">smoothmenu1</font>"&gt;<br>
+&nbsp;&lt;ul&gt;<br>
+&nbsp;&lt;li&gt;&lt;a href="http://www.dynamicdrive.com"&gt;Item 1&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&lt;li&gt;&lt;a href="#"&gt;Folder 0&lt;/a&gt;<br>
+&nbsp; &lt;ul&gt;<br>
+&nbsp; &lt;li&gt;&lt;a href="#"&gt;Sub Item 1.1&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;&lt;a href="#"&gt;Sub Item 1.2&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp; &lt;/ul&gt;<br>
+&nbsp;&lt;/li&gt;<br>
+&nbsp;&lt;/ul&gt;<br>
+&lt;/div&gt;</p>
+<p>Make sure the UL list is valid You can use
+<a target="_blank" href="http://validator.w3.org/">W3C's validation service</a> 
+to quickly check your HTML list for incorrectly nested or unclosed tags.</p>
+<h4><a name="ajax"></a><img border="0" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/orangecircle.gif" width="20" height="19"> 
+Putting the Menu contents in an external file and fetched using Ajax</h4>
+<p><!--webbot bot="HTMLMarkup" startspan --></p><div id="smoothcontainer"><div id="smoothmenu-ajax" class="ddsmoothmenu" style="display: block;">
+<ul>
+<li><a href="http://www.dynamicdrive.com/">Item 1</a></li>
+<li style="z-index: 1000;"><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#" style="padding-right: 23px;">Folder 0<span style="display: block;" class="downarrowclass"></span></a>
+  <ul style="display: none; top: 30px;">
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 1.1</a></li>
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 1.2</a></li>
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 1.3</a></li>
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 1.4</a></li>
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 1.2</a></li>
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 1.3</a></li>
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 1.4</a></li>
+  </ul>
+</li>
+<li style="z-index: 999;"><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#" style="padding-right: 23px;">Folder 1<span style="display: block;" class="downarrowclass"></span></a>
+  <ul style="display: none; top: 30px;">
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 1.1</a></li>
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 1.2</a></li>
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 1.3</a></li>
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 1.4</a></li>
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 1.2</a></li>
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 1.3</a></li>
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 1.4</a></li>
+  </ul>
+</li>
+<li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Item 3</a></li>
+<li style="z-index: 998;"><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#" style="padding-right: 23px;">Folder 2<span style="display: block;" class="downarrowclass"></span></a>
+  <ul style="display: none; top: 30px;">
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 2.1</a></li>
+  <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Folder 2.1</a>
+    <ul>
+    <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 2.1.1</a></li>
+    <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 2.1.2</a></li>
+    <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Folder 3.1.1</a>
+		<ul>
+    		<li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 3.1.1.1</a></li>
+    		<li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 3.1.1.2</a></li>
+    		<li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 3.1.1.3</a></li>
+    		<li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 3.1.1.4</a></li>
+    		<li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 3.1.1.5</a></li>
+		</ul>
+    </li>
+    <li><a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#">Sub Item 2.1.4</a></li>
+    </ul>
+  </li>
+  </ul>
+</li>
+<li><a href="http://www.dynamicdrive.com/style/">Item 4</a></li>
+</ul>
+<br style="clear: left">
+</div></div><!--webbot bot="HTMLMarkup" endspan i-checksum="1789" --><p></p>
+<p>Instead of the menu's content being direct markup on the page, you can 
+instead put that HTML in an external file on your server and have the menu 
+dynamically added to the BODY of your page using Ajax. The above menu is 
+embedded this way. The process for this is simple 
+enough:</p>
+<ol>
+	<li>Move the entire menu's HTML markup- including the outermost DIV 
+	container- to an external file on your server. For example: "<a href="http://www.dynamicdrive.com/dynamicindex1/smoothmenu.htm">smoothmenu.htm</a>"</li>
+	<li>On your page(s) themselves where you want the menu to be dynamically 
+	added, add an empty DIV container with a unique ID of its own in the BODY 
+	section of the page:<br>
+	<br>
+	<div class="codehighlight">&lt;div id="<font color="#FF0000">smoothcontainer</font>"&gt;<br>
+		&lt;noscript&gt;<br>
+		&lt;a href="link to site map for search engines and user with JS 
+		disabled"&gt;Site map&lt;/a&gt;<br>
+		&lt;/noscript&gt;<br>
+		&lt;/div&gt;</div>
+	<br>
+	This container's contents will be replaced by the menu contents defined in 
+	your external file when <code>ddsmoothmenu.init()</code> is run. You can 
+	include any HTML within this empty container that you may want shown to 
+	search engines or users with JavaScript disabled, as it will be replaced 
+	when the script is run.</li>
+	<li>Finally, you need to edit <code>ddsmoothmenu.init()</code>'s "<code>contentsource</code>" 
+	setting to the appropriate setting :<br>
+&nbsp;<div class="codehighlight">ddsmoothmenu.init({<br>
+		mainmenuid: "<font color="#FF0000">smoothmenu-ajax</font>",<br>
+		//customtheme: ["#1c5a80", "#18374a"], //override default menu CSS 
+		background values? Uncomment: ["normal_background", "hover_background"]<br>
+		contentsource: ["<font color="#FF0000">smoothcontainer</font>", "<font color="#FF0000">smoothmenu.htm</font>"] //"markup" or ["container_id", "path_to_menu_file"]<br>
+		})</div>
+	<p>The path to the external file, in this case "smoothmenu.htm", should be a
+	<b>relative path</b> to it based on the current page's position within your 
+	site.</p></li>
+</ol>
+<h4><img border="0" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/orangecircle.gif" width="20" height="19"> 
+Styling the menu item the user is currently at</h4>
+<p>When the user rolls over a menu item (LI element) that contains a sub menu 
+(UL element), the script dynamically adds a CSS class of "<code>.selected</code>" 
+to the former's inner A element. This allows you to style the current active 
+menu item differently from the rest. Inside "<a href="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ddsmoothmenu.css">ddsmoothmenu.css</a>", 
+the relevant CSS you'll want to tweak is:</p>
+<p class="codehighlight">.ddsmoothmenu ul li a.selected { /*CSS class that's 
+dynamically added to the currently active menu items' LI A element*/<br>
+&nbsp;background: black !important; <br>
+&nbsp;color: white;<br>
+}</p>
+<p style="border:1px solid orange; background:lightyellow">Notice the <code>
+!important</code> declaration next to some of the properties inside the CSS 
+file.&nbsp; You may&nbsp; need to experiment with adding or removing this 
+declaration to the color related properties (<code>background</code> and <code>
+color</code> properties) inside the file to get the desired look.</p>
+<h4><img border="0" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/orangecircle.gif" width="20" height="19"> 
+Global menu settings</h4>
+<p>Finally inside <a href="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ddsmoothmenu.js.download">ddsmoothmenu.js</a> there are a few 
+global settings you can modify, such as setting the paths to the arrow images, 
+speed of animation, and whether to disable shadows:</p>
+<p class="codehighlight"><font color="#FF0000">mobilemediaquery</font>: "screen 
+and (max-width: 900px)", // CSS media query string that when matched activates 
+mobile menu (while hiding default)<br>
+//Specify full URL to down and right arrow images (23 
+is padding-right for top level LIs with drop downs, 6 is for vertical top level 
+items with fly outs):<br>
+arrowimages: {down:['downarrowclass', 'down.gif', 23], right:['rightarrowclass', 
+'right.gif', 6]},<br>
+transition: {overtime:300, outtime:300}, //duration of slide in/ out animation, 
+in milliseconds<br>
+<font color="#FF0000">mobiletransition</font>: 200, // duration of slide 
+animation in mobile menu, in milliseconds<br>
+shadow: true, //enable shadow? (offsets now set in ddsmoothmenu.css stylesheet)<br>
+showhidedelay: {showdelay: 100, hidedelay: 200}, //set delay in milliseconds 
+before sub menus appear and disappear, respectively<br>
+zindexvalue: 1000, //set z-index value for menus<br>
+closeonnonmenuclick: true, //when clicking outside of any "toggle" method menu, 
+should all "toggle" menus close? <br>
+closeonmouseout: false, //when leaving a "toggle" menu, should all "toggle" 
+menus close? Will not work on touchscreen The last line above lets you specify the delay before the sub menus appear 
+and disappear when the mouse rolls over and out of them, respectively.</p>
+<p>The two highlighted options in red pertain to mobile related settings, which 
+is incidentally what we'll look at in detail next.</p>
+<h4>
+<a name="mobile"></a>
+<img border="0" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/orangecircle.gif" width="20" height="19"> 
+Configuring the mobile portion of the menu</h4>
+<p>Smooth Navigational Menu whether in "horizontal" or "vertical side bar" mode converts 
+to a <b>central</b>, mobile optimized compact list menu when the desired 
+criteria is matched. The following screenshot shows what happens when a page 
+containing a horizontal and vertical Smooth Menu is resized below the mobile 
+breaking point:</p>
+<p><img border="0" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/smoothmenumobile.gif" width="716" height="590" id="screenshot1"><br>
+<b>Screenshot</b></p>
+<p>As you can see, when the threshold is met, both regular menus disappear, replaced by a drawer icon that when clicked on activates a compact 
+list menu containing all of the combined menus' contents. The original menus 
+reappear when that process is reversed. Whether you only have one Smooth Menu on 
+your page or multiple menus, the outcome is the same. All facets of the mobile 
+menu are dynamically generated, drawing upon existing markup for the regular 
+menus, so there's no redundant code to add to your page. The only extra markup 
+you need to add to&nbsp; your page is the mobile menu "toggler" that toggles the 
+visibility of the mobile menu in "mobile" mode, which is <a href="http://www.dynamicdrive.com/dynamicindex1/ddsmoothmenu.htm#toggler">
+explained further below</a>.</p>
+<h5>- Setting the mobile threshold</h5>
+<p>Before anything else you'll want to set the threshold when the user's 
+environment is considered to be in "mobile", so the mobile version of the menu 
+is activated. Inside 
+  <a href="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ddsmoothmenu.js.download">ddsmoothmenu.js</a>, 
+modify the line:</p>
+<p class="codehighlight">mobilemediaquery: "<font color="#FF0000">screen and 
+(max-width: 700px)</font>", // CSS media query string that when matched 
+activates mobile menu (while hiding default)</p>
+<p>The portion in red should be a valid
+<a target="_blank" href="http://www.javascriptkit.com/dhtmltutors/cssmediaqueries.shtml">
+CSS media query</a> to match when the menu switches over to the mobile version. 
+Some examples of valid CSS media queries are as follows:</p>
+<ul>
+	<li><code>screen and (max-width: 700px)</code>&nbsp; //when the browser 
+	width is 700px or below, desktop or mobile alike</li>
+	<li><code>screen and (max-device-width: 480px)</code>&nbsp; //when the <b>
+	device width</b> is 480px or below, which usually only means in mobile 
+	environments </li>
+	<li><code>screen and (max-device-width: 480px) and (orientation: portrait)</code>&nbsp; 
+	// when device width is 480px or below and in portrait mode only</li>
+</ul>
+<p>The most common decision to make is whether to use <code>max-width</code> or
+<code>max-device-width</code>- the former means the value set applies to both 
+desktop and mobile browsers, while the later limits the resulting match to only 
+mobile devices, with desktop browsers always showing the regular menu.</p>
+<p style="background: lightyellow; border:1px solid orange; padding: 5px"><b>
+IMPORTANT:</b> Your page should carry the META tag <code>&lt;meta name="viewport" 
+content="width=device-width, initial-scale=1"&gt;</code> in the HEAD section of your page to ensure 
+the best mobile experience with this menu.
+<a href="http://www.javascriptkit.com/dhtmltutors/cssmediaqueries3.shtml">This 
+META tag</a> instructs mobile browsers not to zoom out when rendering the 
+webpage by default, which will lead to CSS media queries not being matched 
+properly if the page is.</p>
+<h5>-<a name="toggler"></a> Defining/ customizing the mobile menu toggler</h5>
+<p>The only markup you need to manually add to your page to take advantage of 
+the mobile features of the menu is a mobile menu toggler link, which looks like 
+the following:</p>
+<p class="codehighlight">&lt;a class="<font color="#FF0000">animateddrawer</font>" 
+id="<font color="#FF0000">ddsmoothmenu-mobiletoggle</font>" href="#"&gt;<br>
+&lt;span&gt;&lt;/span&gt;]\<br>
+&lt;/a&gt;</p>
+<p>The link should carry a CSS class of "<code>animateddrawer</code>" and ID of 
+"<code>ddsmoothmenu-mobiletoggle</code>" exactly as is. You can place the toggle anywhere on your page you see fit. 
+The style of this primary toggler is defined by the CSS class "<code>animateddrawer</code>" 
+inside "<a href="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ddsmoothmenu.css">ddsmoothmenu.css</a>" at the bottom, under 
+"Animated Drawer icon (mobile menu toggler) CSS".&nbsp; The default style has it 
+positioned at the upper right corner of the page and fixed when visible:</p>
+<p class="codehighlight">.animateddrawer{<br>
+font-size: 10px; /* Base font size. Adjust this value to modify size of drawer 
+icon */<br>
+width: 3em; <br>
+height: 2.8em; <br>
+outline: none;<br>
+position: fixed; /* By default, make toggler fixed on screen */<br>
+display: none;<br>
+top: 10px; /* Position at upper right corner */<br>
+right: 10px;<br>
+background: white;<br>
+z-index: 1000;<br>
+}<br>
+<br>
+"<br>
+"</p>
+<p>When the mobile menu is open, an additional CSS class of "<code>open</code>" 
+is added to the toggler link to let you style the link differently based on the 
+menu state.</p>
+<h5>- Creating arbitrary links that toggle the mobile menu</h5>
+<p>Besides relying on the primary mobile toggler discussed above, you can also 
+open/close the mobile menu on demand using arbitrary links you define on the 
+page, such as:</p>
+<p class="codehighlight">&lt;a href="#" <font color="#FF0000">onClick="return 
+ddsmoothmenu.togglemobile()" ontouchstart="event.cancelBubble=true"</font>&gt;Open/ 
+Close Mobile Menu&lt;/a&gt;</p>
+<p>The code in red highlights what needs to be added inside your link for the 
+process to work. For those puzzled by the code <code>ontouchstart="event.cancelBubble=true</code>, 
+it is necessary in order to override another behaviour of the mobile menu, which 
+is to dismiss the menu whenever the user clicks or taps anywhere on the page. 
+Without the aforementioned code, the link will have no effect on the menu even 
+though it's calling the appropriate method, <code>ddsmoothmenu.togglemobile()</code>.</p>
+<h5>- Modifying the style of the mobile compact list menu</h5>
+<p>The style of the mobile compact menu is determined by the CSS class "<code><span style="background-color: #EFEFEF">div.ddsmoothmenumobile</span></code>" 
+that's added to the outermost container of the menu. To modify the style, go 
+into "<a href="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/ddsmoothmenu.css">ddsmoothmenu.css</a>" 
+under "Mobile Menu container CSS". </p>
+<p>
+    
+</p><div id="cjfooterad" style="border-top:1px dashed gray; padding-top:1em;">
+
+
+
+<div>
+
+<script async="" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/adsbygoogle.js.download"></script>
+<!-- DD RA horizontal -->
+<ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-7051847089736268" data-ad-slot="6319204235" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:807px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:807px;background-color:transparent"><iframe width="807" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/saved_resource(1).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+
+</div><p></p>
+  
+  
+    
+&nbsp;
+    
+&nbsp;
+    
+    
+&nbsp;</div>
+</div>
+
+<div id="rightcolumn">
+
+
+			<ul class="categorylinks">
+				<li id="c7"><a href="http://www.dynamicdrive.com/dynamicindex7/">Calendars</a></li>
+				<li id="c6"><a href="http://www.dynamicdrive.com/dynamicindex6/">Date &amp; Time</a></li>
+				<li id="c3"><a href="http://www.dynamicdrive.com/dynamicindex3/">Document Effects</a></li>
+				<li id="c17"><a href="http://www.dynamicdrive.com/dynamicindex17/">Dynamic Content</a></li>
+				<li id="c16"><a href="http://www.dynamicdrive.com/dynamicindex16/">Form Effects</a></li>
+				<li id="c12"><a href="http://www.dynamicdrive.com/dynamicindex12/">Games</a></li>
+				<li id="c4"><a href="http://www.dynamicdrive.com/dynamicindex4/">Image Effects</a></li>		
+				<li id="c5"><a href="http://www.dynamicdrive.com/dynamicindex5/">Links &amp; Tooltips</a></li>			
+				<li id="c1"><a href="http://www.dynamicdrive.com/dynamicindex1/">Menus &amp; Navigation</a></li>
+				<li id="c13"><a href="http://www.dynamicdrive.com/dynamicindex13/">Mouse and Cursor</a></li>			
+				<li id="c2"><a href="http://www.dynamicdrive.com/dynamicindex2/">Scrollers</a></li>
+				<li id="c10"><a href="http://www.dynamicdrive.com/dynamicindex10/">Text Animations</a></li>
+				<li id="c9"><a href="http://www.dynamicdrive.com/dynamicindex9/">User/System Preference</a></li>
+				<li id="c8"><a href="http://www.dynamicdrive.com/dynamicindex8/">Window and Frames</a></li>
+				<li id="c11"><a href="http://www.dynamicdrive.com/dynamicindex11/">Other</a></li>
+				<li id="c18"><a href="http://www.dynamicdrive.com/dynamicindex18/">XML and RSS</a></li>
+			</ul>
+
+<div class="sideadbsa">
+
+<!-- BuySellAds Zone Code -->
+<div id="bsap_1303277" class="bsap bsap_1303277" data-serve="C67IL23M">
+<style type="text/css">
+div.bsap_1303277{width:170px;display:block;}div.bsap_1303277 a{width:170px;}div.bsap_1303277 a img{padding:0;}div.bsap_1303277 a em{font-style:normal;}div.bsap_1303277 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;text-align:center;text-decoration:none;margin-bottom:12px;overflow:hidden;}
+div.bsap_1303277 img{border:0;clear:right;}
+div.bsap_1303277 a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}
+div.bsap_1303277 a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}
+div.bsap_1303277 iframe{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;text-align:center;text-decoration:none;margin-bottom:12px;overflow:hidden;}div.bsap_1303277 a{line-height:100%;}div.bsap_1303277 a.adhere{width:170px;height:75px;line-height:600%;}html>body div.bsap_1303277 a.adhere{width:168px;height:73px;}div.bsap_1303277 img.s{height:0;width:0;}
+</style>
+<!-- no ad -->
+<script type="text/javascript" id="auto_3" class="ignoreme"> if (typeof(BSACallback) !== 'undefined') BSACallback(); </script></div>
+<!-- End BuySellAds Zone Code -->
+</div>
+
+
+	<div id="rightcolumnad" class=" sticky">
+
+	<script async="" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/adsbygoogle.js.download"></script>
+	<!-- DD 160 x 60 -->
+	<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-7051847089736268" data-ad-slot="3924582631" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/saved_resource(2).html"></iframe></ins></ins></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+
+	</div>
+
+</div>
+
+</div>
+
+<div id="footer" style="position:relative">
+
+<ul>
+<li><a href="http://www.dynamicdrive.com/export.php?type=new">RSS Feeds</a></li>
+<li><a href="http://twitter.com/ddrivegeorge">Twitter</a></li>
+<li><a href="https://www.facebook.com/Dynamic-Drive-135976520082989/timeline/">Facebook</a></li>
+<li><a href="http://www.dynamicdrive.com/faqs.htm">FAQs</a></li>
+<li><a href="http://www.dynamicdrive.com/newsletter.htm">Free Newsletter</a></li>
+<li><a href="http://www.dynamicdrive.com/notice.htm">Usage Terms</a></li>
+<li><a href="http://www.dynamicdrive.com/contact.htm">Contact</a></li>
+</ul>
+
+
+<div id="copyright">Copyright 2016 Dynamic Drive <span style="margin-left:30px; color:white; cursor:pointer" onclick="dd_scrolltotop(); return false">[ Top ]</span></div>
+
+
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55377-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<div id="dd-submenu" class="dd-anylinkcsscols">
+
+<div class="column">
+	<b>CSS Codes</b>
+	<ul>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C1/">Horizontal CSS Menus</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C2/">Vertical CSS Menus</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C4/">Image CSS</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C6/">Form CSS</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C5/">DIVs and containers</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C7/">Links &amp; Buttons</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C17/">CSS3 demos</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C8/">Other</a></li>
+	</ul>
+</div>
+
+<div class="column">
+	<b>CSS Layouts</b>
+	<ul>
+	<li><a href="http://www.dynamicdrive.com/style/layouts/" class="title">CSS Layouts</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/layouts/category/C9/">Two Columns</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/layouts/category/C10/">Three Columns</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/layouts/category/C12/">Fixed layouts</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/layouts/category/C13/">Liquid Layouts</a></li>
+	<li><a href="http://www.dynamicdrive.com/style/layouts/category/C11/">CSS Frames</a></li>
+	</ul>
+</div>
+
+</div><div id="dd-submenu2" class="dd-anylinkcsscols">
+
+<div class="column">
+	<ul>
+	<li><a href="http://tools.dynamicdrive.com/imageoptimizer/">Image Optimizer</a></li>
+	<li><a href="http://tools.dynamicdrive.com/favicon/">FavIcon Generator</a></li>
+	<li><a href="http://tools.dynamicdrive.com/faviconeditor/">FavIcon Editor</a></li>
+	<li><a href="http://www.cssdrive.com/cssautoprefixer/">CSS Autoprefixer <span style="color:red;margin-left:6px">new</span></a></li>
+	<li><a href="http://tools.dynamicdrive.com/animatedgif/">Animated Gif</a></li>
+	<li><a href="http://www.dynamicdrive.com/emailriddler/">Email Riddler</a></li>
+  <li><a href="http://tools.dynamicdrive.com/password/">.htaccess Password</a></li>
+	</ul>
+</div>
+
+<div class="column">
+	<ul>
+	<li><a href="http://tools.dynamicdrive.com/userban/">.htaccess Banning</a></li>
+  <li><a href="http://tools.dynamicdrive.com/gradient/">Gradient Image</a></li>
+  <li><a href="http://tools.dynamicdrive.com/button/">Button Maker</a></li>
+	<li><a href="http://tools.dynamicdrive.com/imagetobase64">Image to Base64 String</a></li>
+	<li><a href="http://tools.dynamicdrive.com/ribbon/">Ribbon Rules</a></li>
+	<li><a href="http://tools.dynamicdrive.com/listscrubber/">List Scrubber Tool</a></li>
+	<li><a href="http://www.ddwhois.com/">DD Whois Service</a></li>
+	</ul>
+</div>
+
+</div><div id="stwrapper" class="stwrapper stwrapper5x stwrapper5x" style="display: none;"><iframe allowtransparency="true" id="stLframe" class="stLframe" name="stLframe" frameborder="0" scrolling="no" src="./Dynamic Drive DHTML Scripts- Smooth Navigational Menu_files/index.faf645e679a86c7d3a7cece83015531b.html"></iframe></div><div id="stOverlay" onclick="javascript:stWidget.closeWidget();"></div></body></html>
